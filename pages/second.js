@@ -11,7 +11,7 @@ export default function _({ text }) {
 }
 
 export function getServerSideProps() {
-  const text = readFileSync(path.resolve(process.cwd(), 'data/copy.txt'), { encoding: 'utf-8' })
+  const text = readFileSync(path.resolve(process.cwd(), 'data/second.txt'), { encoding: 'utf-8' })
 
   return { props: { text }}
 }
